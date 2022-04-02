@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+p,
+a {
+    font-size: 1rem;
+}
+
+/* 大小設定 */
+
+body {
+    width: 1000px;
+    margin: auto;
+}
+
+/* nav */
+
+nav {
+    width: 100%;
+}
+
+nav .container {
+    padding: 0.4rem 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+    background: #eee;
+}
+
+nav .container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container li:first-child a {
+    color: #4460a0;
+}
+
+nav .container li:first-child::after {
+    content: '|';
+    margin: 0px 0.5rem 4px;
+    color: gray;
+}
+
+nav .container li:last-child a {
+    color: #00aaec;
+}
+
+nav .container li img {
+    vertical-align: baseline;
+}
+
+/* header */
+
+header {
+    width: 100%;
+}
+
+header .hexscool_logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .hexscool_logo > a {
+    width: 224px;
+    height: 50px;
+    display: block;
+    background-image: url('assets/headerLogo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .hexscool_logo > ul {
+    display: flex;
+    align-items: center;
+}
+
+header .hexscool_logo > ul li {
+    margin: 0 0.5rem;
+    padding: 0 0.3rem;
+    position: relative;
+}
+
+header .hexscool_logo > ul li a {
+    font-size: 1.2rem;
+    color: #00cc99;
+}
+
+header .hexscool_logo > ul li:first-child a::after {
+    width: 100%;
+}
+
+header .hexscool_logo > ul li:not(:first-child) a::after {
+    width: 0%;
+}
+
+header .hexscool_logo > ul li a::after {
+    content: '';
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    background-color: #00cc99;
+    transition: width 0.6s ease;
+}
+
+header .hexscool_logo > ul li a:hover:after {
+    width: 100%;
+}
+
+/* main */
+
+/* banmer */
+
+main {
+    width: 100%;
+}
+
+main .banner {
+    height: 346px;
+    display: flex;
+    align-items: center;
+    background-image: url('assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .banner h1 {
+    width: 100%;
+    padding: 3rem 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* product */
+
+.productList {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.productList .product {
+    width: 26%;
+    padding: 1.2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 1px 1px rgb(0 0 0 / 10%);
+    transition: all 0.4s ease;
+}
+
+.productList .product:hover {
+    box-shadow: 0 18px 32px -18px #000;
+    cursor: pointer;
+}
+
+.productList .product .imgbox {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.productList .product .imgbox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.productList .product h3 {
+    font-weight: 700;
+}
+
+.productList .product .text {
+    width: 100%;
+}
+
+.productList .product .text ul li {
+    margin-left: 25px;
+    list-style: disc;
+}
+
+/* productCompare */
+
+.productCompare {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productCompare > h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.productCompare > table {
+    width: 80%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.productCompare > table tbody tr {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.productCompare > table tbody th,
+.productCompare > table tbody td {
+    text-align: left;
+    padding: 8px 20px;
+}
+
+.productCompare > table tbody th {
+    font-weight: 500;
+    background-color: #f7f7f7;
+}
+
+.productCompare > table tbody tr td:first-child {
+    font-weight: 500;
+}
+
+.custom-p-HexColor {
+    color: #00a67d;
+    font-weight: 500;
+}
+
+/* contact */
+
+.contact {
+    width: 100%;
+    margin: 60px 0px 20px;
+    background-image: linear-gradient(0deg, #009872 0%, #00644b 100%);
+}
+
+.contact h2 {
+    padding-top: 38px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #ffffff;
+}
+
+.contact .contactForm {
+    display: flex;
+}
+
+.contact .contactFrom .message {
+    margin: 20px 30px;
+}
+
+.contact .contactForm .message textarea {
+    margin: 20px 30px;
+    padding: 20px;
+    resize: none;
+}
+
+.contact .contactForm .info {
+    width: 490px;
+    margin: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contactForm .info p {
+    color: white;
+}
+
+.contactFrom .info .name,
+.contactFrom .info .phone .contactFrom .info .e-mail {
+    width: 100%;
+}
+
+.contactForm .info input {
+    width: 100%;
+    margin: 2px 0;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #e1e1e1;
+}
+
+.contactForm .info .submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.info .submit .cutsom-btn-submit {
+    padding: 0.5rem 1.2rem;
+    color: white;
+    background-color: #00cc99;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.info .submit .cutsom-btn-submit:hover {
+    color: #00cc99;
+    background-color: white;
+}
+
+/* fotter */
+footer {
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+footer .contactInfo span {
+    display: flex;
+}
+
+footer .contactInfo a {
+    margin-left: 4px;
+    color: #e12d80;
+}
