@@ -283,6 +283,20 @@ main .banner h1 {
     font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+    .productCompare > table tbody tr th:nth-child(3),
+    .productCompare > table tbody tr th:nth-child(4),
+    .productCompare > table tbody tr td:nth-child(3),
+    .productCompare > table tbody tr td:nth-child(4) {
+        display: none;
+    }
+
+    .productCompare > table tbody th,
+    .productCompare > table tbody td {
+        text-align: center;
+    }
+}
+
 .custom-p-HexColor {
     color: #00a67d;
     font-weight: 500;
