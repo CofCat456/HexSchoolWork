@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CofCat</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul class="container">
+        <li>
+          <a href="https://www.facebook.com/hexschool/" target="_blank">
+            <img src="assets/facebook_logo.png" alt="facebook Logo" />
+            <span>粉絲團</span></a
+          >
+        </li>
+        <li>
+          <a href="https://twitter.com/hexschool1" target="_blank">
+            <img src="assets/twitter_logo.png" alt="twitter Logo" />
+            <span>聯絡我們</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div class="hexscool_logo">
+        <a href="https://www.hexschool.com/" target="_blank"></a>
+        <ul>
+          <li><a href="#">首頁</a></li>
+          <li><a href="#product">產品介紹</a></li>
+          <li><a href="#section3">聯絡我們</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="#">
+        <div class="banner">
+          <h1>
+            六角學院
+            <br />
+            讓您奠定良好的前端基礎
+          </h1>
+        </div>
+      </section>
+      <section id="product">
+        <div class="productList">
+          <div class="product">
+            <div class="imgbox">
+              <img src="assets/product_html5.png" alt="" />
+            </div>
+            <h3>Html 5基礎教學</h3>
+            <p>
+              主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+            </p>
+          </div>
+          <div class="product">
+            <div class="imgbox">
+              <img src="assets/product_rwd.png" alt="" />
+            </div>
+            <h3>響應式網站設計</h3>
+            <p>
+              響應式網站設計 (Responsive web
+              design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
+            </p>
+          </div>
+          <div class="product">
+            <div class="imgbox">
+              <img src="assets/product_jQuery.png" alt="" />
+            </div>
+            <h3>jQuery 實戰教學</h3>
+            <div class="text">
+              <p>本課程有以下特色</p>
+              <ul>
+                <li>瞭解變數的使用方法</li>
+                <li>學習並操作DOM</li>
+                <li>學習基本數學運算方法</li>
+                <li>套件的操作及運用</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="productCompare">
+          <h1>線上及實體課程差異</h1>
+          <table>
+            <tbody>
+              <tr>
+                <th>項目</th>
+                <th>Hex School 線上課程</th>
+                <th>一般線上課程</th>
+                <th>實體課程</th>
+              </tr>
+              <tr>
+                <td>費用</td>
+                <td class="custom-p-HexColor">較低</td>
+                <td class="custom-p-HexColor">較低</td>
+                <td>較高</td>
+              </tr>
+              <tr>
+                <td>學習效果</td>
+                <td>一般</td>
+                <td class="custom-p-HexColor">較低</td>
+                <td class="custom-p-HexColor">很好</td>
+              </tr>
+              <tr>
+                <td>Code reiew</td>
+                <td class="custom-p-HexColor">有</td>
+                <td>無</td>
+                <td>不一定</td>
+              </tr>
+              <tr>
+                <td>課程更新速度</td>
+                <td class="custom-p-HexColor">普通</td>
+                <td class="custom-p-HexColor">普通</td>
+                <td>較慢</td>
+              </tr>
+              <tr>
+                <td>多次複習</td>
+                <td class="custom-p-HexColor">可</td>
+                <td>可</td>
+                <td>不可</td>
+              </tr>
+              <tr>
+                <td>字幕</td>
+                <td class="custom-p-HexColor">有</td>
+                <td>不一定</td>
+                <td>板書</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="section3">
+        <div class="contact">
+          <h2>
+            對我們課程有興趣嗎？
+            <br />
+            歡迎留下您的資料
+          </h2>
+          <form
+            action="https://www.w3schools.com/action_page.php"
+            class="contactForm"
+          >
+            <div class="message">
+                <textarea
+                  user="suerOption"
+                  placeholder="想和我們說些什麼?"
+                ></textarea>
+            </div>
+            <div class="info">
+              <div class="name">
+                <p>姓名</p>
+                <input
+                  type="text"
+                  name="userName"
+                  size="40"
+                  required
+                  placeholder="請輸入姓名"
+                />
+              </div>
+              <div class="phone">
+                <p>電話</p>
+                <input
+                  type="tel"
+                  name="userTel"
+                  pattern="[0-9]{3,4}-[0-9]{6,7}"
+                  required
+                  placeholder="請輸入電話 09XX-123456"
+                />
+              </div>
+              <div class="e-mail">
+                <p>信箱</p>
+                <input
+                  type="email"
+                  name="userMail"
+                  placeholder="請輸入信箱"
+                  size="30"
+                />
+              </div>
+              <div class="submit">
+                <button type="submit" class="cutsom-btn-submit">送出</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="fotterLogo">
+        <a href="https://www.hexschool.com/" target="_blank"
+          ><img src="assets/footerLogo.png" alt="HexScool Logo"
+        /></a>
+      </div>
+      <div class="contactInfo">
+        <span
+          >聯絡我們 :
+          <a href="mailto:hexschool@gmail.com"> hexschool@gmail.com</a></span
+        >
+        <span>電話 : <a href="tel:0999123456"> 0999123456</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
